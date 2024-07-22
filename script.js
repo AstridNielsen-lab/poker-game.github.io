@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'AC.jpg', '2C.jpg', '3C.jpg', '4C.jpg', '5C.jpg', '6C.jpg', '7C.jpg', '8C.jpg', '9C.jpg', '10C.jpg', 'JC.jpg', 'QC.jpg', 'KC.jpg',
         'AE.jpg', '2E.jpg', '3E.jpg', '4E.jpg', '5E.jpg', '6E.jpg', '7E.jpg', '8E.jpg', '9E.jpg', '10E.jpg', 'JE.jpg', 'QE.jpg', 'KE.jpg',
         'joker.jpg' 
-        // Continue até 'KO.jpg', 'KP.jpg', 'KC.jpg', 'KE.jpg'
-        // Adicione o restante das cartas aqui
+    
     ];
     
     function updateCash(amount) {
@@ -115,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             playerTokens += amount; // Adiciona ao token do jogador
             playerTokenElement.textContent = `Token do Jogador: ${playerTokens}`;
             tableTokenElement.textContent = `Token da Mesa: ${tableTokens}`;
+            updateCash(-amount); // Atualiza o cash descontando o valor da aposta
             showMessage(`Aposta de ${amount} definida.`);
         } else {
             showMessage('Cash insuficiente para essa aposta.');
