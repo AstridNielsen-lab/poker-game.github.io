@@ -1,4 +1,4 @@
- <img src="https://raw.githubusercontent.com/AstridNielsen-lab/poker-game.github.io/main/jogo%20poker%202.jpg" width="80%" height="100%" alt="Poker App">
+ <img src="https://raw.githubusercontent.com/AstridNielsen-lab/poker-game.github.io/main/jogo%20poker%202.jpg" width="100%" height="100%" alt="Poker App">
 
 # Jogo de Poker
 
