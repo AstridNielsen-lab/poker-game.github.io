@@ -54,19 +54,41 @@ body {
 }
 
 #dealer-cards {
-    background-color: #006400; /* Cor de fundo para as cartas do croupier */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004d00; /* Cor de fundo para as cartas */
     border: 2px solid #003300; /* Borda verde escuro */
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; /* Ajusta a largura dos containers de cartas */
+    max-width: 800px; /* Define a largura máxima */
 }
 
 #player-cards {
-    background-color: #004d00; /* Cor de fundo para as cartas do jogador */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004d00; /* Cor de fundo para as cartas */
     border: 2px solid #003300; /* Borda verde escuro */
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; /* Ajusta a largura dos containers de cartas */
+    max-width: 800px; /* Define a largura máxima */
 }
 
 #community-cards {
-    background-color: #002200; /* Cor de fundo para as cartas comunitárias */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004d00; /* Cor de fundo para as cartas */
     border: 2px solid #003300; /* Borda verde escuro */
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; /* Ajusta a largura dos containers de cartas */
+    max-width: 800px; /* Define a largura máxima */
 }
+
 
 #cash-container {
     background-color: #005700; /* Cor de fundo para o cash */
@@ -100,4 +122,16 @@ button {
 
 button:hover {
     background-color: #003300; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.community-tokens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004d00; /* Cor de fundo para as cartas */
+    border: 2px solid #003300; /* Borda verde escuro */
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; /* Ajusta a largura dos containers de cartas */
+    max-width: 800px; /* Define a largura máxima */
 }
