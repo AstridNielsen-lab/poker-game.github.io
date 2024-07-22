@@ -1,8 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: green;
+    background-color: #004d00; /* Cor de fundo verde escuro */
     color: white;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -17,18 +19,62 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .poker-table {
-    background-color: #006400;
+    background-color: #003300; /* Verde escuro para a mesa */
     padding: 20px;
     border-radius: 10px;
+    width: 80%; /* Ajusta a largura da mesa */
+    max-width: 1200px; /* Define a largura máxima */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .cards {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    align-items: center;
+    background-color: #004d00; /* Cor de fundo para as cartas */
+    border: 2px solid #003300; /* Borda verde escuro */
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; /* Ajusta a largura dos containers de cartas */
+    max-width: 300px; /* Define a largura máxima */
+}
+
+#dealer-cards {
+    background-color: #006400; /* Cor de fundo para as cartas do croupier */
+    border: 2px solid #003300; /* Borda verde escuro */
+}
+
+#player-cards {
+    background-color: #004d00; /* Cor de fundo para as cartas do jogador */
+    border: 2px solid #003300; /* Borda verde escuro */
+}
+
+#community-cards {
+    background-color: #002200; /* Cor de fundo para as cartas comunitárias */
+    border: 2px solid #003300; /* Borda verde escuro */
+}
+
+#cash-container {
+    background-color: #005700; /* Cor de fundo para o cash */
+    border: 2px solid #003300; /* Borda verde escuro */
+    color: #ffffff; /* Cor do texto do cash */
+    font-size: 24px; /* Tamanho da fonte do cash */
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .cards img {
@@ -45,4 +91,13 @@ button {
     margin: 5px;
     padding: 10px 20px;
     font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #004d00; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003300; /* Cor de fundo do botão ao passar o mouse */
 }
