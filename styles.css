@@ -34,6 +34,19 @@ body {
     align-items: center;
 }
 
+.poker-table2 {
+    background-color: #003300; /* Verde escuro para a mesa */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%; /* Ajusta a largura da mesa */
+    max-width: 1200px; /* Define a largura máxima */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .cards-container {
     display: flex;
     justify-content: space-around;
