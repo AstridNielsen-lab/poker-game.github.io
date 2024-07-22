@@ -12,9 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let tableTokens = 0;
     let currentBet = 0;
     let deck = [
-        'AO.jpg', 'AP.jpg', 'AC.jpg', 'AE.jpg',
-        '2O.jpg', '2P.jpg', '2C.jpg', '2E.jpg',
-        '3O.jpg', '3P.jpg', '3C.jpg', '3E.jpg',
+        'AO.jpg', '2O.jpg', '3O.jpg', '4O.jpg', '5O.jpg', '6O.jpg', '7O.jpg', '8O.jpg', '9O.jpg', '10O.jpg', 'JO.jpg', 'QO.jpg', 'KO.jpg',
+        'AP.jpg', '2P.jpg', '3P.jpg', '4P.jpg', '5P.jpg', '6P.jpg', '7P.jpg', '8P.jpg', '9P.jpg', '10P.jpg', 'JP.jpg', 'QP.jpg', 'KP.jpg',
+        'AC.jpg', '2C.jpg', '3C.jpg', '4C.jpg', '5C.jpg', '6C.jpg', '7C.jpg', '8C.jpg', '9C.jpg', '10C.jpg', 'JC.jpg', 'QC.jpg', 'KC.jpg',
+        'AE.jpg', '2E.jpg', '3E.jpg', '4E.jpg', '5E.jpg', '6E.jpg', '7E.jpg', '8E.jpg', '9E.jpg', '10E.jpg', 'JE.jpg', 'QE.jpg', 'KE.jpg',
+        'joker.jpg' 
         // Continue até 'KO.jpg', 'KP.jpg', 'KC.jpg', 'KE.jpg'
         // Adicione o restante das cartas aqui
     ];
