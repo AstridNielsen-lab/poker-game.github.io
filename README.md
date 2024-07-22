@@ -1,4 +1,3 @@
-```markdown
 # Jogo de Poker
 
 Bem-vindo ao jogo de Poker!
@@ -39,4 +38,3 @@ Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um for
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
-```
