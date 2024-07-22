@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Poker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="cash" id="cash">Cash: 1000</div>
+    </div>
+    <div class="game-container">
+        <div class="poker-table">
+            <div id="dealer-cards" class="cards"></div>
+            <div id="player-cards" class="cards"></div>
+            <div id="community-cards" class="cards"></div>
+            
+            <!-- Marcadores de Tokens -->
+            <div class="tokens">
+                <div class="token" id="player-token">Token do Jogador: 0</div>
+                <div class="token" id="table-token">Token da Mesa: 0</div>
+            </div>
+            
+            <div class="actions">
+                <button class="button-10" onclick="setBet(10)">Apostar 10</button>
+                <button class="button-20" onclick="setBet(20)">Apostar 20</button>
+                <button class="button-30" onclick="setBet(30)">Apostar 30</button>
+                <button class="button-40" onclick="setBet(40)">Apostar 40</button>
+                <button class="button-50" onclick="setBet(50)">Apostar 50</button>
+                <button class="button-100" onclick="setBet(100)">Apostar 100</button>
+            </div>
+            <div class="actions">
+                <button onclick="dealCards()">Distribuir Cartas</button>
+                <button onclick="revealFlop()">Revelar Flop</button>
+                <button onclick="revealTurn()">Revelar Turn</button>
+                <button onclick="revealRiver()">Revelar River</button>
+                <button onclick="determineWinner()">Determinar Vencedor</button>
+            </div>
+            <div id="messages"></div>
+        </div>
+    </div>
+    
+    <!-- Nome do Jogo e Regras -->
+    <div class="game-info">
+        <h1>Nome do Jogo: Poker</h1>
+        <h2>Regras do Jogo</h2>
+        <p>1. O jogo é jogado com um baralho padrão de 52 cartas.</p>
+        <p>2. Cada jogador recebe duas cartas viradas para baixo.</p>
+        <p>3. Cinco cartas comunitárias são distribuídas no centro da mesa.</p>
+        <p>4. O objetivo é formar a melhor combinação de cinco cartas usando as duas cartas pessoais e as cartas comunitárias.</p>
+        <p>5. As apostas são feitas em várias rodadas antes e após a distribuição das cartas comunitárias.</p>
+        <p>6. O jogador com a melhor combinação de cinco cartas vence a mão.</p>
+        <p>7. Em caso de empate, o prêmio é dividido entre os vencedores.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

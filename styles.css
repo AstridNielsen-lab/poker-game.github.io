@@ -1,0 +1,47 @@
+/* Estilo geral para a mesa de poker */
+.poker-table {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2E8B57; /* Cor de fundo da mesa */
+    border: 2px solid #006400; /* Borda verde escura */
+}
+
+/* Divs das cartas */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Cartas do croupier */
+#dealer-cards {
+    background-color: #FF6347; /* Cor de fundo para as cartas do croupier (Tomate) */
+    border: 2px solid #FF4500; /* Borda laranja avermelhada */
+}
+
+/* Cartas do jogador */
+#player-cards {
+    background-color: #4682B4; /* Cor de fundo para as cartas do jogador (Azul aço) */
+    border: 2px solid #4169E1; /* Borda azul royal */
+}
+
+/* Cartas comunitárias */
+#community-cards {
+    background-color: #32CD32; /* Cor de fundo para as cartas comunitárias (Verde limão) */
+    border: 2px solid #228B22; /* Borda verde floresta */
+}
+
+/* Estilo das cartas individuais */
+.cards img {
+    width: 70px; /* Ajuste conforme necessário */
+    height: auto;
+    margin: 0 5px;
+    border: 1px solid #000; /* Borda preta ao redor das cartas */
+    border-radius: 4px;
+}
